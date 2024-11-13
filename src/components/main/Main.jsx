@@ -135,118 +135,7 @@ export default function Main({ isDarkMode }) {
                         </div>
                     </div>
                 </CardComp>
-
-
             </div>
-            {/* <div className="main-container-second-section">
-                <CardComp isDarkMode={isDarkMode} >
-                    <div className={isDarkMode ? "section-card-2-darkmode" : "section-card-2"}>
-                        <div style={{ display: 'flex', padding: '20px 0px 15px 40px', alignItems: 'center' }}>
-                            <Typography style={{ marginRight: 30 }}>Revenue &nbsp;&nbsp;|</Typography>
-                            <li style={{ marginRight: 30, fontSize: 12 }}>Current Week $58,211</li>
-                            <li style={{ marginRight: 30, fontSize: 12 }}>Previous Week $68,768</li>
-                        </div>
-                        <LineChart
-                            width={650}
-                            height={250}
-                            data={data1}
-                            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-                        >
-                            <CartesianGrid vertical={false} />
-                            <XAxis dataKey="month" />
-                            <YAxis
-                                tickLine={false}
-                                axisLine={false}
-                                ticks={[0, 10, 20, 30]}
-                                tickFormatter={(value) => `${value}M`}
-                                domain={[0, 30]}
-                            />
-                            <Tooltip />
-
-                            <Line
-                                type="monotone"
-                                dataKey="value"
-                                stroke="#8884d8"
-                                strokeWidth={2}
-                                dot={false}
-                            />
-
-                            <Line
-                                type="monotone"
-                                dataKey="value2"
-                                stroke="#82ca9d"
-                                strokeWidth={2}
-                                dot={false}
-                                strokeDasharray="4 5"
-                            />
-                        </LineChart>
-                    </div>
-                </CardComp>
-
-                <CardComp isDarkMode={isDarkMode} >
-                    <div className={isDarkMode ? "section-card-chart-2-darkmode" : "section-card-chart-2"}>
-                        <div>
-                            <Typography style={{ display: 'flex', justifyContent: 'center', marginTop: 5 }}>Revenu By Location</Typography>
-                            <ComposableMap>
-                                <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                                    {({ geographies }) =>
-                                        geographies.map((geo) => (
-                                            <Geography
-                                                key={geo.rsmKey}
-                                                geography={geo}
-                                                style={{
-                                                    default: { fill: "#D6D6DA", outline: "none" },
-                                                    hover: { fill: "#F53", outline: "none" },
-                                                    pressed: { fill: "#E42", outline: "none" },
-                                                }}
-                                            />
-                                        ))
-                                    }
-                                </Geographies>
-                                {markers.map(({ name, coordinates }) => (
-                                    <Marker key={name} coordinates={coordinates}>
-                                        <circle r={5} fill="red" stroke="#fff" strokeWidth={2} />
-                                        <text
-                                            textAnchor="middle"
-                                            y={-10}
-                                            style={{ fontFamily: "system-ui", fill: "#5D5A6D", fontSize: "10px" }}
-                                        >
-                                            {name}
-                                        </text>
-                                    </Marker>
-                                ))}
-
-                            </ComposableMap>
-                        </div>
-                        {markers.map((item) => (
-                            <div key={item.location} style={{ margin: "0px 30px 10px 30px" }}>
-                                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                    <span>{item.location}</span>
-                                    <span>{item.revenue}K</span>
-                                </div>
-                                <div
-                                    style={{
-                                        height: "5px",
-                                        background: "gray",
-                                        borderRadius: "5px",
-                                        marginTop: "5px",
-                                        position: "relative",
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            height: "100%",
-                                            width: `${(item.revenue / maxRevenue) * 100}%`,
-                                            background: "#A8C5DA",
-                                            borderRadius: "5px",
-                                        }}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </CardComp>
-            </div> */}
 
             <div className="main-container-second-section">
                 <CardComp isDarkMode={isDarkMode}>
@@ -296,7 +185,7 @@ export default function Main({ isDarkMode }) {
                 <CardComp isDarkMode={isDarkMode}>
                     <div className={isDarkMode ? "section-card-chart-2-darkmode" : "section-card-chart-2"}>
                         <div>
-                            <Typography style={{ display: 'flex', justifyContent: 'center', marginTop: 5 }}>Revenue By Location</Typography>
+                            <Typography style={{ display: 'flex', justifyContent: 'center', paddingTop: 5 }}>Revenue By Location</Typography>
                             <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                                 <ComposableMap>
                                     <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
@@ -370,7 +259,7 @@ export default function Main({ isDarkMode }) {
                                 {...getTableProps()}
                                 style={{
                                     margin: '10px 10px 0px 20px',
-                                    width: "95%",  // Adjusted width to 100% to be responsive
+                                    width: "95%",
                                     textAlign: "left",
                                     borderCollapse: "collapse",
                                     color: isDarkMode ? "#fff" : "#000",
