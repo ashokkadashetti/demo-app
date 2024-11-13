@@ -19,6 +19,7 @@ export default function IconButtonComp({ sideBarObj, style }) {
                     <ListItem
                         disableGutters
                         style={{
+                            color: activeItem === item.title ? 'black' : 'inherit',
                             backgroundColor: activeItem === item.title ? '#f5f5f5' : 'transparent',
                             borderRadius: '4px',
                             marginBottom: '4px',
@@ -68,8 +69,9 @@ export default function IconButtonComp({ sideBarObj, style }) {
                                         key={subIndex}
                                         disableGutters
                                         style={{
+                                            color: activeItem === subItem.title ? 'black' : 'inherit',
                                             paddingLeft: '35px',
-                                            backgroundColor: activeItem === subItem.title ? '#f5f5f5' : 'transparent', // Light gray for active sub-item
+                                            backgroundColor: activeItem === subItem.title ? '#f5f5f5' : 'transparent',
                                             borderRadius: '4px',
                                         }}
                                     >
