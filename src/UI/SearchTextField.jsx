@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextField, InputAdornment, Box } from '@mui/material';
 import { Search } from '@mui/icons-material';
 import AllInclusiveTwoToneIcon from '@mui/icons-material/AllInclusiveTwoTone';
+import './styles.css'
 
 export default function SearchTextField({ className, style, endIcon, stylesObj }) {
     const [searchValue, setSearchValue] = useState("");
