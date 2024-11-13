@@ -11,7 +11,7 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 const orders = [
   { id: "#CM9801", user: "Natali Craig", project: "Landing Page", address: "Meadow Lane Oakland", date: "Just now", color: "#ffc107", status: "In Progress", avatar: "https://randomuser.me/api/portraits/women/44.jpg" },
   { id: "#CM9802", user: "Kate Morrison", project: "CRM Admin pages", address: "Larry San Francisco", date: "A minute ago", color: "#28a745", status: "Complete", avatar: "https://randomuser.me/api/portraits/women/45.jpg" },
-  { id: "#CM9803", user: "Drew Cano", project: "Client Project", address: "Bagwell Avenue Ocala", date: "1 hour ago", color: "#dc3545", status: "Pending", avatar: "https://randomuser.me/api/portraits/men/45.jpg" },
+  { id: "#CM9803", user: "Drew Cano", project: "Client Project", address: "Bagwell Avenue Ocala", icon: true, date: "1 hour ago", color: "#dc3545", status: "Pending", avatar: "https://randomuser.me/api/portraits/men/45.jpg" },
   { id: "#CM9804", user: "Orlando Diggs", project: "Admin Dashboard", address: "Washburn Baton Rouge", date: "Yesterday", color: "#007bff", status: "Approved", avatar: "https://randomuser.me/api/portraits/men/46.jpg" },
   { id: "#CM9805", user: "Andi Lane", project: "App Landing Page", address: "Nest Lane Olivette", date: "Feb 2, 2023", color: "#6c757d", status: "Rejected", avatar: "https://randomuser.me/api/portraits/women/46.jpg" },
   { id: "#CM9805", user: "Andi Lane", project: "App Landing Page", address: "Nest Lane Olivette", date: "Feb 2, 2023", color: "#6c757d", status: "Rejected", avatar: "https://randomuser.me/api/portraits/women/46.jpg" },
@@ -165,14 +165,19 @@ export default function OrderList({ isDarkMode }) {
                   <span style={{ marginLeft: 10 }}>{order.user}</span>
                 </td>
                 <td style={{ fontSize: 12 }}>{order.project}</td>
-                <td style={{ fontSize: 12 }}>{order.address}</td>
+                <td style={{ fontSize: 12 }}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    {order.address}
+                    {order?.icon && <CalendarToday style={{ marginLeft: 5, width: 16, height: 16 }} />}
+                  </div>
+                </td>
                 <td style={{ fontSize: 12, display: 'flex' }}>
                   <CalendarToday style={{ marginRight: 5, width: 16, height: 16 }} />
                   {order.date}
                 </td>
                 <td style={{ fontSize: 12 }}>
                   <span style={{ color: order.color }}>
-                    <li style={{ display: 'inline' }}>{order.status}</li>
+                    <li>{order.status}</li>
                   </span>
 
                 </td>
