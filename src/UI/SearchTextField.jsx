@@ -32,7 +32,7 @@ export default function SearchTextField({ className, style, endIcon, stylesObj }
                         </Box> &nbsp; /
                     </InputAdornment>
                 ),
-                style: { ...stylesObj },
+                style: { backgroundColor: "#1C1C1C0D", ...stylesObj },
             }}
         />
     );
