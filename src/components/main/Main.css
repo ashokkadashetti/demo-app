@@ -1,0 +1,249 @@
+.main {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+:root {
+    --card-bg-color: white;
+}
+
+.dark-mode {
+    --card-bg-color: #333;
+    color: white;
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* width: 100%; */
+}
+
+.section-card {
+    background-color: #fff;
+    height: 252px;
+    border-radius: 8px;
+}
+
+.section-card-darkmode {
+    background-color: #FFFFFF0D;
+    height: 252px;
+    border-radius: 8px;
+}
+
+.section-card-chart {
+    background-color: #F7F9FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligns content to the top */
+    /* align-items: center; */
+    /* Centers the BarChart horizontally */
+    height: 252px;
+    border-radius: 16px;
+    padding: 10px 20px;
+    /* Adds some padding around the content */
+}
+
+
+
+
+.section-card-chart-darkmode {
+    /* border: 1px solid gray; */
+    background-color: #FFFFFF0D;
+    /* padding: 20px; */
+    height: 252px;
+    border-radius: 16px;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 252px !important;
+}
+
+.card-comp {
+    width: 202px !important;
+    background-color: #E3F5FF !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.card-comp-1 {
+    background-color: #F7F9FB !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.card-comp-1-darkmode {
+    background-color: #FFFFFF0D !important;
+    color: white !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.card-comp-2 {
+    background-color: #F7F9FB !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.card-comp-2-darkmode {
+    color: white !important;
+    background-color: #FFFFFF0D !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.card-comp-3 {
+    background-color: #E5ECF6 !important;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 252px !important;
+}
+
+.card-comp,
+.card-comp-1,
+.card-comp-1-darkmode,
+.card-comp-2,
+.card-comp-2-darkmode,
+.card-comp-3 {
+    width: 202px !important;
+    height: 92px !important;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card-comp {
+    background-color: #E3F5FF !important;
+}
+
+.card-comp-1 {
+    background-color: #F7F9FB !important;
+}
+
+.card-comp-1-darkmode {
+    background-color: #FFFFFF0D !important;
+    color: white !important;
+}
+
+.card-comp-2 {
+    background-color: #F7F9FB !important;
+}
+
+.card-comp-2-darkmode {
+    background-color: #FFFFFF0D !important;
+    color: white !important;
+}
+
+.card-comp-3 {
+    background-color: #E5ECF6 !important;
+}
+
+
+.main-container-second-section {
+    display: grid;
+    grid-template-columns: 70% 28%;
+    gap: 20px;
+    /* width: 100%; */
+}
+
+.main-container-second-section-1 {
+    display: grid;
+    grid-template-columns: 70% 28%;
+    gap: 20px;
+    /* width: 100%; */
+}
+
+.section-card-2 {
+    min-width: 662px;
+    background-color: #F7F9FB;
+    height: 318px;
+    border-radius: 16px;
+}
+
+.section-card-2-darkmode {
+    min-width: 662px;
+    background-color: #FFFFFF0D;
+    height: 318px;
+    border-radius: 16px;
+}
+
+.section-card-2-table {
+    min-width: 662px;
+    background-color: #F7F9FB;
+    height: 336px;
+    border-radius: 16px;
+}
+
+.section-card-2-darkmode-table {
+    min-width: 662px;
+    background-color: #FFFFFF0D;
+    height: 336px;
+    border-radius: 16px;
+}
+
+.section-card-chart-2 {
+    height: 318px;
+    background-color: #F7F9FB;
+    border-radius: 16px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.section-card-chart-2-darkmode {
+    background-color: #FFFFFF0D;
+    height: 318px;
+    border-radius: 16px;
+}
+
+.section-card-chart-2-1 {
+    height: 336px;
+    background-color: #F7F9FB;
+    border-radius: 16px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.section-card-chart-2-darkmode-1 {
+    background-color: #FFFFFF0D;
+    height: 336px;
+    border-radius: 16px;
+}
+
+.rsm-svg {
+    /* margin-left: 40px; */
+    height: 120px;
+    width: 260px;
+}

@@ -1,0 +1,42 @@
+.gray-bullets {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.gray-bullets li {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.gray-bullets li::before {
+    content: '•';
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.left-sidebar {
+    border-right: 0.1px solid gray;
+    /* height: 100vh !important; */
+}
+
+
+.right-sidebar {
+    width: 280px;
+    border-left: 0.1px solid gray;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.right-sidebar.light-mode {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.right-sidebar.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}

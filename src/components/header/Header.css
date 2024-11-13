@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Ensures content inside the header stays vertically aligned */
+    background-color: #ffffff;
+    height: 68px !important;
+    /* Ensures the height is fixed */
+    min-height: 68px;
+    /* Prevents the height from shrinking */
+    max-height: 68px;
+    /* Prevents the height from growing */
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in the height */
+    position: relative;
+    /* Optional: Keeps the header in place relative to its parent */
+    z-index: 100;
+    /* Ensures the header stays above other content if overlapping occurs */
+}
+
+
+.input-field,
+.css-1e3qgpi-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 8px !important;
+    background-color: #1C1C1C1A;
+    width: 160px;
+    height: 28px;
+}
+
+.input-field-darkmode,
+.css-1e3qgpi-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 8px !important;
+    background-color: gray;
+    width: 160px;
+    height: 28px;
+}
+
+
+/* App.css */
+.app-container.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.app-container.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.header.light-header {
+    background-color: #f0f0f0;
+}
+
+.header.dark-header {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.input-field {
+    background-color: inherit;
+    color: inherit;
+}
+
+.breadcrumbs {
+    color: inherit;
+}
